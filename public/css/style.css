@@ -1,0 +1,135 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+/* conatiner class of boilerplate : occpied all min height and footer will be embeeded at bottom*/
+.container{
+    flex: 1; 
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+/* nav icon */
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+  
+/* we use !important: for overriding bootstrap default styling */
+.nav-link{
+    color: #222222 !important; /*to darken the color of the nav-link */
+    font-size: 1.2rem !important;
+}
+
+.navbar{
+    background-color: rgb(252, 250, 250);/*as default was transparent so we changed it to white */
+}
+
+.logo{
+    height: 2.2rem;
+    width: 3.5rem;
+}
+
+/* Footer */
+
+/* to remove underlines */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+} 
+
+.f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display: flex;
+    /* Distribute item along the cross-axis--y-axis */
+    align-items: center;
+    /* Distribute space between and around the content items */
+   justify-content: center;  
+} 
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+} 
+
+.f-info{
+    display: flex;
+    text-align: center;
+    background-color: #ebebeb;
+    height: 8rem;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card{
+    border:none !important;
+     margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit:cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight:400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* button of new.ejs*/
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* button of edit.ejs */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+} 
+
+/* show.ejs styling */
+.show-img{
+    height: 30vh;
+
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}

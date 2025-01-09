@@ -1,0 +1,83 @@
+<!-- navbar-expand-lg for large size and navbar-expand-md for medium size -->
+<!-- sticky-top : to stick navbar at top-->
+
+<style>
+  .search-btn {
+    
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+  .search-btn:hover {
+    background-color: #fe424d;
+    color: #fff;
+  }
+  .search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  .search-inp {
+    /* margin-top: 5px; */
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
+  .navbar-collapse {
+    transition: background-color 0s ease-in-out;
+  }
+  .navbar-collapse.show {
+    /* margin-top: 10px; */
+    background-color: white
+  }
+</style>
+
+ <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top"> <!--navbar-expand-md: means navbar is expanded till medium screen after that i will be displayed as humburger-->
+  <div class="container-fluid">
+      <a class="navbar-brand" href="/listings"> <!-- <i class="fa-regular fa-compass"></i> -->
+      <img src="/Nav_Logo.png" alt="Bootstrap" class="logo" />
+    </a>
+    <button
+     class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav d-none d-md-block">
+        <a class="nav-link" href="/listings">Explore</a>
+      </div>
+      <!-- search from bootstrap -->
+      <div class="navbar-nav ms-auto">
+        <form
+        class="d-flex"
+        role="search"
+        method="GET"
+        action="/listings/search"
+        >
+        <input
+        class="form-control me-2 search-inp"
+        type="search"
+        name="q"
+        placeholder="Search"
+        />
+        <button class="btn search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>Search
+        </button>
+      </form>
+    </div>
+      <div class="navbar-nav ms-auto"> <!-- ms-auto : this will place these link in right side of navbar-->
+        <a class="nav-link" href="/listings/new">List Your Space</a>
+        <% if(!currUser){ %>
+        <a class="nav-link" href="/signup"><b>Sign up</b></a>
+        <a class="nav-link" href="/login"><b>Login</b></a>
+        <%}%> <% if(currUser){ %>
+        <a class="nav-link" href="/logout"><b>Logout</b></a>
+        <%}%>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
