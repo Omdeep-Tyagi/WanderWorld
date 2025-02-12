@@ -43,26 +43,6 @@ To install and run this project locally, follow these steps:
 6. Open your browser and go to `http://localhost:3000`.
 
 
-## Sample .env File
-
-```dotenv
-# Sample .env file for WanderWorld
-
-# Port number for the server
-PORT=3000
-
-# MongoDB connection URI
-ATLASDB_URL=mongodb://localhost:27017/wanderworld
-
-# Session secret for express-session
-SECRET_CODE=your_secret_code
-
-# Cloudinary configuration
-CLOUD_NAME=your_cloud_name
-CLOUD_API_KEY=your_api_key
-CLOUD_API_SECRET=your_api_secret
-
-
 ## Usage
 
 - Visit the homepage to explore the featured travel listings.
@@ -93,3 +73,26 @@ For any inquiries or questions, please contact:
 - GitHub: [Omdeep-Tyagi](https://github.com/Omdeep-Tyagi)
 - LinkedIn: [Omdeep-Tyagi](https://www.linkedin.com/in/omdeep-tyagi-428854272/)
 - Mail: tyagiom2308@gmail.com
+
+
+
+## Sample .env File
+
+```dotenv
+# Sample .env file for WanderWorld
+
+# Port number for the server
+PORT=3000
+
+# MongoDB connection URI
+ATLASDB_URL=mongodb://localhost:27017/wanderworld
+
+# Session secret for express-session
+SECRET_CODE=your_secret_code
+
+# Cloudinary configuration
+CLOUD_NAME=your_cloud_name
+CLOUD_API_KEY=your_api_key
+CLOUD_API_SECRET=your_api_secret
+
+
